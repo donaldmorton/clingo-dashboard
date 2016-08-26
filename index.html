@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .navbar-default{
+      background-color: #1d1f2d;
+   }
+   #sidebar-wrapper{
+       background:#f3f3f3;
+   }
+   .navform{
+      border: none;
+      height: 35px;
+      margin-top: 5px;
+      background-color: #d0d0d0;
+      color: white;
+   }
+   .lightText{
+      color:#3DB8D6;
+   }
+   .stepCircle{
+      background-color: #3DB8D6;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      color: white;
+      padding: 10px;
+      padding-left: 10px;
+      font-size: 20px;
+   }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" style="margin:0px;border-radius:0px">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="background-color:#3DB8D6" href="#">Clingo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Orders <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control navform" placeholder="Search">
+        </div>
+      </form>
+       <ul class="nav navbar-nav">
+       <li><a href="#">Bussiness: <span class="lightText">5sec s.a de c.v</span></a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="glyphicon glyphicon-comment"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div id="wrapper" style="margin-top:60px;">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                   <a href="#">
+                      <!-- Single button -->
+                      <div class="btn-group btn-block">
+                        <button type="button" style="border-radius:0px;" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Action</a></li>
+                           <li><a href="#">Another action</a></li>
+                           <li><a href="#">Something else here</a></li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">Separated link</a></li>
+                        </ul>
+                     </div>
+                  </a>
+               </li>
+                <li>
+                   <a href="#"><div class="media">
+                      <div class="media-left">
+                        <a href="#">
+                           <img class="media-object" height="50px" width="50px" src="http://zblogged.com/wp-content/uploads/2015/11/5.png" alt="...">
+                        </a>
+                     </div>
+                     <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        ...
+                     </div>
+                  </div></a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <center><h3 class="lightText">Order #234433</h3></center>
+                        <table class="table">
+                           <tr>
+                              <td><center><div class="stepCircle">1</div>
+                                 <small>Request<br><span>7:80 am</span></small>
+                              </center></td>
+                              <td><center><div class="stepCircle">2</div>
+                                 <small>Pick-Up</small>
+                              </center></td>
+                              <td><center><div class="stepCircle">3</div>
+                                 <small>Cleaning</small>
+                              </center></td>
+                              <td><center><div class="stepCircle">4</div>
+                                 <small>Delivery</small>
+                              </center></td>
+                              <td><center><div class="stepCircle">5</div>
+                                 <small>Complete</small>
+                              </center></td>
+                           </tr>
+                        </table>
+                        <div class="col-lg-6">
+                           <h5><small>CLIENT:</small></h5>
+                           <p>Osmar Manzano</p>
+                        </div>
+                        <div class="col-lg-6">
+                           <h5><small>SERVICE:</small></h5>
+                           <p>Osmar Manzano</p>
+                        </div>
+                        <div class="col-lg-6">
+                           <hr>
+                           <h5><small>PICK-UP:</small></h5>
+                           <p>Osmar Manzano</p>
+                        </div>
+                        <div class="col-lg-6">
+                           <hr>
+                           <h5><small>DROP-OFF:</small></h5>
+                           <p>Osmar Manzano</p>
+                        </div>
+                        <div class="col-lg-12">
+                           <hr>
+                           <h5><small>DROP-OFF:</small></h5>
+                           <p>Osmar Manzano</p>
+                        </div>
+                        <div class="col-lg-12">
+                           <hr>
+                           <h3><small>DROP-OFF:</small></h3>
+                           <p>Osmar Manzano</p>
+                        </div>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

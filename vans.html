@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .navbar-default{
+      background-color: #1d1f2d;
+   }
+   #sidebar-wrapper{
+       background:#f3f3f3;
+   }
+   .navform{
+      border: none;
+      height: 35px;
+      margin-top: 5px;
+      background-color: #d0d0d0;
+      color: white;
+   }
+   .lightText{
+      color:#3DB8D6;
+   }
+   .stepCircle{
+      background-color: #3DB8D6;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      color: white;
+      padding: 10px;
+      padding-left: 10px;
+      font-size: 20px;
+   }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" style="margin:0px;border-radius:0px">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="background-color:#3DB8D6" href="#">Clingo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Orders <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">ORDERS</a></li>
+            <li><a href="driver.html">DRIVERS</a></li>
+            <li><a href="#">VANS</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control navform" placeholder="Search">
+        </div>
+      </form>
+       <ul class="nav navbar-nav">
+       <li><a href="#">Bussiness: <span class="lightText">5sec s.a de c.v</span></a></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="glyphicon glyphicon-comment"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div id="wrapper" style="margin-top:60px;">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper"style="width:25%">
+            <ul class="sidebar-nav"style="width:100%">
+                <li>
+                   <a href="#">
+                      <!-- Single button -->
+                      <div class="btn-group btn-block">
+                        <button type="button" style="border-radius:0px;background-color:transparent;border-color:transparent" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <p style="color:#000000">VANS <span class="glyphicon glyphicon-chevron-down"style="width:10px;font-size:12px;color:#3DB8D6"></span></p>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Action</a></li>
+                           <li><a href="#">Another action</a></li>
+                           <li><a href="#">Something else here</a></li>
+                           <li role="separator" class="divider"></li>
+                           <li><a href="#">Separated link</a></li>
+                        </ul>
+                     </div>
+                  </a>
+               </li>
+                <li style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc">
+                 <a herf=""><div class="row">
+                   <div class="col-md-12">
+                     <div class="col-md-3 col-sm-3"style="padding:0px;margin-top:16px">
+                       <img src="http://www.kargomaster.com/wp-content/plugins/store-locator/images/Van_icon.png"height="50px"width="50px"/>
+                     </div>
+                     <div class="col-md-9 col-sm-9"style="padding:0px">
+                       <table style="width:100%">
+                         <tr>
+                           <td>
+                             <p style="color:#3DB8D6"><u>Ford Transit</u></p>
+                           </td>
+                         </tr>
+                         <tr>
+                           <td>
+                             <p style="margin-top:-28px;font-size:12px;color:#000000">(81) 1945 1234</p>
+                             <p style="margin-top:-31px;font-size:12px;color:#000000">81 Rides</p>
+                           </td>
+                         </tr>
+                       </table>
+                     </div>
+                   </div>
+                 </div></a>
+                </li>
+                <li style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc">
+                 <a herf=""><div class="row">
+                   <div class="col-md-12">
+                     <div class="col-md-3 col-sm-3"style="padding:0px;margin-top:16px">
+                       <img src="http://www.kargomaster.com/wp-content/plugins/store-locator/images/Van_icon.png"height="50px"width="50px"/>
+                     </div>
+                     <div class="col-md-9 col-sm-9"style="padding:0px">
+                       <table style="width:100%">
+                         <tr>
+                           <td>
+                             <p style="color:#3DB8D6"><u>Ford Transit</u></p>
+                           </td>
+                         </tr>
+                         <tr>
+                           <td>
+                             <p style="margin-top:-28px;font-size:12px;color:#000000">(81) 1945 1234</p>
+                             <p style="margin-top:-31px;font-size:12px;color:#000000">81 Rides</p>
+                           </td>
+                         </tr>
+                       </table>
+                     </div>
+                   </div>
+                 </div></a>
+                </li>
+                <li style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc">
+                 <a herf=""><div class="row">
+                   <div class="col-md-12">
+                     <div class="col-md-3 col-sm-3"style="padding:0px;margin-top:16px">
+                       <img src="http://www.kargomaster.com/wp-content/plugins/store-locator/images/Van_icon.png"height="50px"width="50px"/>
+                     </div>
+                     <div class="col-md-9 col-sm-9"style="padding:0px">
+                       <table style="width:100%">
+                         <tr>
+                           <td>
+                             <p style="color:#3DB8D6"><u>Ford Transit</u></p>
+                           </td>
+                         </tr>
+                         <tr>
+                           <td>
+                             <p style="margin-top:-28px;font-size:12px;color:#000000">(81) 1945 1234</p>
+                             <p style="margin-top:-31px;font-size:12px;color:#000000">81 Rides</p>
+                           </td>
+                         </tr>
+                       </table>
+                     </div>
+                   </div>
+                 </div></a>
+                </li>
+                <li>
+                  <center><button class="btn"style="background-color:#3DB8D6;border-radius:8px;color:#FFFFFF;height:32px;margin-top:20px"data-toggle="modal"data-target="#myModal">
+                    <p style="margin-top:-6px">ADD NEW VAN</p>
+                  </button></center>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <iframe style="margin-left:5%;margin-top:-20px"width="100%" height="300" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed"frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-2 col-md-offset-1"style="margin-top:-65px">
+                <img src="http://zblogged.com/wp-content/uploads/2015/11/5.png"height="120px"width="120px"/>
+              </div>
+              <div class="col-md-9"style="padding:0px">
+                <h4 style="color:#3DB8D6;margin-left:-4%">Carlos <br>Hernández</h4>
+              </div>
+              <div class="col-md-11 col-md-offset-1">
+                <p><i class="glyphicon glyphicon-star"style="color:#3DB8D6"></i> <i class="glyphicon glyphicon-star"style="color:#3DB8D6"></i> <i class="glyphicon glyphicon-star"style="color:#3DB8D6"></i> <i class="glyphicon glyphicon-star-empty"style="color:#3DB8D6"></i> <i class="glyphicon glyphicon-star-empty"style="color:#3DB8D6"></i></p>
+                <p style="color:#3DB8D6;font-size:12px;margin-top:-10px"><i class="glyphicon glyphicon-map-marker"></i> 81 Rides</p>
+              </div>
+              <div class="col-md-5 col-md-offset-1">
+                <h5><small style="color:#000000">MOBILE:</small></h5>
+                <h4 style="color:#3DB8D6">(81) 1945 1234</h4>
+                <hr>
+                <h5><small style="color:#000000">ADDRESS:</small></h5>
+                <h4 style="color:#3DB8D6">Hidalgo #340 Col. San Jerónimo 66250</h4>
+                <hr>
+                <h5><small style="color:#000000">DRIVER LICENSE: </small></h5>
+                <div class="col-md-6"style="padding:0px;margin-top:-10px">
+                  <h4 style="color:#3DB8D6">(81) 1945 1234</h4>
+                </div>
+                <div class="col-md-6"style="padding:0px">
+                  <a href=""style="text-decoration:none"align="right"><p style="color:#3DB8D6"><u>See photo</u></p></a>
+                </div>
+                <br>
+                <hr>
+                <h5><small style="color:#000000">ID NUMBER: </small></h5>
+                <div class="col-md-6"style="padding:0px;margin-top:-10px">
+                  <h4 style="color:#3DB8D6">03445889009800</h4>
+                </div>
+                <div class="col-md-6"style="padding:0px">
+                  <a href=""style="text-decoration:none"align="right"><p style="color:#3DB8D6"><u>See photo</u></p></a>
+                </div>
+                <br>
+                <hr>
+                <h5><small style="color:#000000">CURP:</small></h5>
+                <h4 style="color:#3DB8D6">ALTR211988</h4>
+              </div>
+              <div class="col-md-6">
+                  <h5 style="margin-bottom:175px"><small style="color:#000000">PRODUCTIVITY:</small></h5>
+                  <hr>
+                  <h5><small style="color:#000000">SCHEDULE:</small></h5>
+              </div>
+            </div>
+          </div>
+          <center><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a></center>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Agregar nuevo vehículo</h4>
+              </div>
+              <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Nombre de propietario" aria-describedby="basic-addon1"style="margin-bottom:10px">
+                <input type="text" class="form-control" placeholder="Marca" aria-describedby="basic-addon1"style="margin-bottom:10px">
+                <input type="text" class="form-control" placeholder="Modelo" aria-describedby="basic-addon1"style="margin-bottom:10px">
+                <input type="text" class="form-control" placeholder="Placas de conducir" aria-describedby="basic-addon1"style="margin-bottom:10px">
+              </div>
+              <div class="modal-footer">
+                <center><button type="button" class="btn btn-primary">Añadir nuevo vehículo</button></center>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"ng-app='clingoDashboard'>
 
 <head>
 
@@ -11,19 +11,10 @@
 
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <style>
     .navbar-default{
       background-color: #1d1f2d;
@@ -54,219 +45,26 @@
     </style>
 </head>
 
-<body>
-<nav class="navbar navbar-default navbar-fixed-top" style="margin:0px;border-radius:0px">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" style="background-color:#3DB8D6" href="#">Clingo</a>
-    </div>
+<body ng-controller="logInController">
+  <div id="main">
+    <div ng-view></div>
+  </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Orders <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">ORDERS</a></li>
-            <li><a href="driver.html">DRIVERS</a></li>
-            <li><a href="vans.html">VANS</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control navform" placeholder="Search">
-        </div>
-      </form>
-       <ul class="nav navbar-nav">
-       <li><a href="#">Bussiness: <span class="lightText">5sec s.a de c.v</span></a></li>
-    </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="glyphicon glyphicon-comment"></i></a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-    <div id="wrapper" style="margin-top:60px;">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper"style="width:25%">
-            <ul class="sidebar-nav"style="width:100%">
-                <li>
-                   <a href="#">
-                      <!-- Single button -->
-                      <div class="btn-group btn-block">
-                        <button type="button" style="border-radius:0px;background-color:transparent;border-color:transparent" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           <p style="color:#000000">To Register <span class="glyphicon glyphicon-chevron-down"style="width:10px;font-size:12px;color:#3DB8D6"></span></p>
-                        </button>
-                        <ul class="dropdown-menu">
-                           <li><a href="#">Action</a></li>
-                           <li><a href="#">Another action</a></li>
-                           <li><a href="#">Something else here</a></li>
-                           <li role="separator" class="divider"></li>
-                           <li><a href="#">Separated link</a></li>
-                        </ul>
-                     </div>
-                  </a>
-               </li>
-                <li style="border-top:1px solid #cccccc;border-bottom:1px solid #cccccc">
-                 <a herf=""><div class="row">
-                   <div class="col-md-12">
-                     <div class="col-md-3 col-sm-3"style="padding:0px;margin-top:16px">
-                       <img src="http://zblogged.com/wp-content/uploads/2015/11/5.png"height="50px"width="50px"/>
-                     </div>
-                     <div class="col-md-9 col-sm-9"style="padding:0px">
-                       <table style="width:100%">
-                         <tr>
-                           <td>
-                             <p style="color:#3DB8D6"><u>Bolsa 57</u></p>
-                           </td>
-                           <td>
-                             <button class="btn" type="submit"style="height:50%;background-color:transparent;border:1px solid #b3b3b3;cursor:default;width:72%">
-                               <center><p style="font-size:11px;margin-top:-7px;color:#000000">folio #0223</p></center>
-                             </button>
-                           </td>
-                         </tr>
-                         <tr>
-                           <td>
-                             <p style="margin-top:-28px;font-size:14px;color:#000000">Donald Morton</p>
-                             <p style="margin-top:-28px;font-size:14px;color:#000000">3 kg</p>
-                           </td>
-                           <td>
-                             <button class="btn" type="submit"style="height:50%;background-color:#3DB8D6;margin-top:-27px;width:72%">
-                               <p style="font-size:11px;margin-top:-7px;color:#FFFFFF">ACCEPT</p>
-                             </button>
-                           </td>
-                         </tr>
-                       </table>
-                     </div>
-                   </div>
-                 </div></a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <center><h3 class="lightText">Order #234433</h3></center>
-                        <table class="table">
-                           <tr>
-                              <td><center><div class="stepCircle">1</div>
-                                 <small>Request<br><span>7:80 am</span></small>
-                              </center></td>
-                              <td><center><div class="stepCircle">2</div>
-                                 <small>Pick-Up</small>
-                              </center></td>
-                              <td><center><div class="stepCircle">3</div>
-                                 <small>Cleaning</small>
-                              </center></td>
-                              <td><center><div class="stepCircle">4</div>
-                                 <small>Delivery</small>
-                              </center></td>
-                              <td><center><div class="stepCircle">5</div>
-                                 <small>Complete</small>
-                              </center></td>
-                           </tr>
-                        </table>
-                        <div class="col-lg-6">
-                           <h5><small style="color:#000000">CLIENT:</small></h5>
-                           <p style="color:#3DB8D6;font-size:22px">Osmar Manzano</p>
-                        </div>
-                        <div class="col-lg-6">
-                           <h5><small style="color:#000000">SERVICE:</small></h5>
-                           <p style="color:#3DB8D6;font-size:22px">Dry cleaning</p>
-                           <table style="width:100%">
-                             <tr>
-                               <td style="color:#3DB8D6">- 1 Basic Shirt</td>
-                               <td style="color:#3DB8D6"align="right">$ 14.00</td>
-                             </tr>
-                             <tr>
-                               <td style="color:#3DB8D6">- 1 Suit</td>
-                               <td style="color:#3DB8D6"align="right">$ 35.00</td>
-                             </tr>
-                           </table>
-                        </div>
-                        <div class="col-lg-6">
-                           <hr>
-                           <h5><small style="color:#000000">PICK-UP:</small></h5>
-                           <p style="color:#3DB8D6;font-size:22px">4/APR/16</p>
-                           <div class="col-md-5"style="margin-left:-15px">
-                             <p style="color:red"><i class="glyphicon glyphicon-time"style="color:#3DB8D6;font-size:14px"></i> 7:35</p>
-                             <p style="color:#3DB8D6;margin-top:-10px"><i class="glyphicon glyphicon-map-marker"style="color:#3db8d6;font-size:14px"></i> Calz. del valle 420. Del Valle</p>
-                           </div>
-                           <div class="col-md-7">
-                             <center><img src="http://zblogged.com/wp-content/uploads/2015/11/5.png"height="50px"width="50px"style="border-radius:100%;margin-top:-98px"/></center>
-                             <center><p style="color:#3DB8D6;margin-top:-20px">Carlos Hernández</p></center>
-                           </div>
-                        </div>
-                        <div class="col-lg-6">
-                           <hr>
-                           <h5><small style="color:#000000">DROP-OFF:</small></h5>
-                           <p style="color:#3DB8D6;font-size:22px">5/APR/16</p>
-                           <div class="col-md-5"style="margin-left:-15px">
-                             <p style="color:#3DB8D6"><i class="glyphicon glyphicon-time"style="color:#3DB8D6;font-size:14px"></i> 1:00PM-1:30PM</p>
-                             <p style="color:#3DB8D6;margin-top:-10px"><i class="glyphicon glyphicon-map-marker"style="color:#3db8d6;font-size:14px"></i> Calz. del valle 420. Del Valle</p>
-                           </div>
-                           <div class="col-md-7">
-                             <center><p style="color:#3DB8D6;">Pending...</p></center>
-                           </div>
-                         </div>
-                        <div class="col-lg-12">
-                           <hr>
-                           <h5><small style="color:#000000">PAYMENT:</small></h5>
-                           <p style="color:#3DB8D6">Credit card: **** **** **** 7310</p>
-                        </div>
-                        <div class="col-lg-12">
-                           <hr>
-                           <div class="col-md-6"style="margin-top:-15px">
-                             <h4 style="color:#3DB8D6">Total:</h4>
-                           </div>
-                           <div class="col-md-6"style="margin-top:-15px;margin-bottom:15px">
-                             <h4 style="color:#3DB8D6"align="right">$ 49.00</h4>
-                           </div>
-                           <center><h5><small style="color:#000000;margin-top:10px">ACTIVITY <i class="glyphicon glyphicon-chevron-up"style="color:#3DB8D6;font-size:12px"></i></small></h5></center>
-                           <div class="col-md-12"style="border:1px solid #3DB8D6">
-                             <p style="font-size:11px;margin-top:10px">12:15 PM <font color="#3DB8D6">The order was lorem ipsum dolor sit amet</font></p>
-                             <p style="font-size:11px;margin-top:10px">12:15 PM <font color="#3DB8D6">The order was lorem ipsum dolor sit amet</font></p>
-                             <p style="font-size:11px;margin-top:10px">12:15 PM <font color="#3DB8D6">The order was lorem ipsum dolor sit amet</font></p>
-                             <p style="font-size:11px;margin-top:10px">12:15 PM <font color="#3DB8D6">The order was lorem ipsum dolor sit amet</font></p>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <center><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a></center>
-
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
+  <script src="js/route.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="home/home.js"></script>
+  <script src="driver/driver.js"></script>
+  <script src="vans/vans.js"></script>
+  <script src="logIn/logIn.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+  });
+</script>
 
 </body>
 
